@@ -7,8 +7,8 @@ class Otok < Formula
   desc "Build native libraries from source and hand them to your build"
   homepage "https://git.e-poison.com/sasha/otok"
   url "https://git.e-poison.com/sasha/otok.git",
-      tag:      "v0.1.19",
-      revision: "e85538a704f6091c6b1e52d44f6de9f2c93d398b"
+      tag:      "v0.1.20",
+      revision: "879704239fd9c83687affd729d1d60359094ef89"
   license "GPL-3.0-only"
   head "https://git.e-poison.com/sasha/otok.git", branch: "main"
 
