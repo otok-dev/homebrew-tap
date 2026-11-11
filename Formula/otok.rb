@@ -8,8 +8,8 @@
 class Otok < Formula
   desc "Build native libraries from source and hand them to your build"
   homepage "https://github.com/otok-dev/otok"
-  url "https://github.com/otok-dev/otok/releases/download/v0.4.0/otok-0.4.0.tar.gz"
-  sha256 "6d6ecf1fcb6043d02934dfd73c8f9340c5ccf44e293775b59618132161906fa3"
+  url "https://github.com/otok-dev/otok/releases/download/v0.5.0/otok-0.5.0.tar.gz"
+  sha256 "4618ed222b5f9ff978bd4c555253671388cbf012e107bd103c2577b12a555629"
   # with the Otok Output Exception (LICENSE-EXCEPTION), which is not in the SPDX list that Homebrew's license DSL takes
   license "GPL-3.0-only"
   head "https://github.com/otok-dev/otok.git", branch: "main"
@@ -21,6 +21,12 @@ class Otok < Formula
   depends_on "tomlplusplus"
 
   uses_from_macos "curl"
+
+  # C++23: GCC 14 or later (Homebrew's own GCC on Linux, decision 104)
+  fails_with :gcc do
+    version "13"
+    cause "otok is written in C++23"
+  end
 
   def install
     args = %W[
