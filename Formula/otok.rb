@@ -8,8 +8,8 @@
 class Otok < Formula
   desc "Build native libraries from source and hand them to your build"
   homepage "https://github.com/otok-dev/otok"
-  url "https://github.com/otok-dev/otok/releases/download/v0.5.32/otok-0.5.32.tar.gz"
-  sha256 "3001bedd334018ef51ce50dc0e55da70292e3a17b565734f1cce2b74f17d04ce"
+  url "https://github.com/otok-dev/otok/releases/download/v0.5.33/otok-0.5.33.tar.gz"
+  sha256 "ca5600672bb2355340548ff92fbd38f2dd93fa02abfe96d80d8775abe241e201"
   # with the Otok Output Exception (LICENSE-EXCEPTION), which is not in the SPDX list that Homebrew's license DSL takes
   license "GPL-3.0-only"
   head "https://github.com/otok-dev/otok.git", branch: "main"
